@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: yellow; background-color: black; text-align: center;">
+        My Website
+    </h1>
+    <div style="padding-left: 300px;">
+        <img id="myImage" onclick="changeImage()" src="https://hosty.xxx/i/b0bef547c78b3976f45211e74242e771206fea04.jpg" width="100" height="180">
+        <p>Click the light bulb to turn on/off the light.</p>
+        <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("https://hosty.xxx/i/315b32b020d77900d1fb0b4d1dd94d266eaad15c.jpg")) {
+              image.src = "https://hosty.xxx/i/b0bef547c78b3976f45211e74242e771206fea04.jpg";
+            } else {
+              image.src = "https://hosty.xxx/i/315b32b020d77900d1fb0b4d1dd94d266eaad15c.jpg";
+            }
+          }
+        </script>
+    </div>
+<footer>
+    <p style="color: yellow; background-color: black; text-align: center; padding: 20px;">
+        Ilyos
+    </p>
+</footer>
+    
+</body>
+</html>
